@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/flDetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsFragment"
+    android:clickable="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/cvDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add contact"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"/>
+
+                </LinearLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivAddPhoto"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/emoticon1_foreground"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name:"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/etAddName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:hint="Enter Name"
+                        android:text="Name"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginStart="2dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last Name:"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/etAddLastName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Last Name"
+                        android:text="Last Name"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginStart="2dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Suffix:"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/etAddSuffix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Suffix"
+                        android:text="Suffix"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginStart="2dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone:"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/etAddPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Number"
+                        android:text="Phone"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginStart="2dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/etAddEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Email"
+                        android:text="Email"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginStart="2dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btAdd"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:text="ADD"
+                android:backgroundTint="@color/black"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
